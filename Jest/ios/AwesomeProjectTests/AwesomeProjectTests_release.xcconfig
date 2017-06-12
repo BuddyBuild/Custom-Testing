@@ -1,0 +1,2 @@
+#include "AwesomeProjectTests/AwesomeProjectTests_base.xcconfig"
+COPY_PHASE_STRIP = NO

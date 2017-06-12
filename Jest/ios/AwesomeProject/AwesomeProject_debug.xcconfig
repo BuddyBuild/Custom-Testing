@@ -1,0 +1,2 @@
+#include "AwesomeProject/AwesomeProject_base.xcconfig"
+DEAD_CODE_STRIPPING = NO

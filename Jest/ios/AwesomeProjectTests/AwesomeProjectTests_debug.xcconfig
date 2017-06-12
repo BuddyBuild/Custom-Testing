@@ -1,0 +1,2 @@
+#include "AwesomeProjectTests/AwesomeProjectTests_base.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = ["DEBUG=1", "$(inherited)"]
