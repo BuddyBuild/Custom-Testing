@@ -6,4 +6,5 @@ ls -1
 
 echo '=== Navigate to tests folder'
 cd ../
+mkdir buddybuild_artifacts && mkdir buddybuild_artifacts/Jest
 npm run ci_test
