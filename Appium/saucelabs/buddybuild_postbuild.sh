@@ -1,6 +1,10 @@
 # constants
 ZIPPED_APP=/tmp/sandbox/workspace/zippedapp.zip
 
+# set up the custom reporting folders
+mkdir /tmp/sandbox/workspace/buddybuild_artifacts
+mkdir /tmp/sandbox/workspace/buddybuild_artifacts/Appium
+
 # log some standard information
 APP_PATH="/tmp/sandbox/599b66cad741c700015bbcce/bbbuild/Build/Products/Debug-iphonesimulator/m2048.app"
 echo $APP_PATH
@@ -13,5 +17,6 @@ echo "=== Completed upload of app to saucelabs ==="
 brew install maven
 cd appiumtest
 echo "=== Started test run ==="
-
+mvn test
 echo "=== Test Suite complete ==="
+mv target/surefire-reports/*.xml /tmp/sandbox/worksapce/buddybuild_artifacts/Appium
