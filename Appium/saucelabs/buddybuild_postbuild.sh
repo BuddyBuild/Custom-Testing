@@ -19,4 +19,4 @@ cd appiumtest
 echo "=== Started test run ==="
 mvn test
 echo "=== Test Suite complete ==="
-mv target/surefire-reports/*.xml /tmp/sandbox/worksapce/buddybuild_artifacts/Appium
+mv target/surefire-reports/*.xml /tmp/sandbox/workspace/buddybuild_artifacts/Appium
