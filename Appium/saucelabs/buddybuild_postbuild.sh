@@ -6,8 +6,8 @@ APP_PATH="/tmp/sandbox/599b66cad741c700015bbcce/bbbuild/Build/Products/Debug-iph
 echo $APP_PATH
 echo "=== Beginning upload of app to saucelabs ==="
 # saucelabs expects the app to be zipped
-zip $ZIPPED_APP $APP_PATH
-curl -u $SAUCELABS_USERNAME:$SAUCELABS_KEY -X POST -H "Content-Type: application/octet-stream" https://saucelabs.com/rest/v1/storage/$SAUCELABS_USERNAME/test_app.zip?overwrite=true --data-binary $ZIPPED_APP
+zip -r $ZIPPED_APP $APP_PATH
+curl -u $SAUCELABS_USERNAME:$SAUCELABS_KEY -X POST -H "Content-Type: application/octet-stream" https://saucelabs.com/rest/v1/storage/$SAUCELABS_USERNAME/test_app.zip?overwrite=true --data-binary @$ZIPPED_APP
 
 echo "=== Completed upload of app to saucelabs ==="
 brew install maven
