@@ -73,7 +73,7 @@ public class SauceTest implements SauceOnDemandSessionIdProvider {
         capabilities.setCapability("platformVersion", "9.3");
         capabilities.setCapability("deviceName", "iPhone 6");
         capabilities.setCapability("appiumVersion", "1.6.3");
-        capabilities.setCapability("app", "sauce-storage:app_name");
+        capabilities.setCapability("app", "sauce-storage:test_app.zip");
 
         driver = new IOSDriver<WebElement>(new URL(MessageFormat.format("http://{0}:{1}@ondemand.saucelabs.com:80/wd/hub", sauceUserName, sauceAccessKey)),
                 capabilities);

@@ -1,9 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: com.saucelabs.appium.SauceTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 95.47 sec <<< FAILURE!
-testUIComputation(com.saucelabs.appium.SauceTest)  Time elapsed: 95.306 sec  <<< ERROR!
-org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities [{app=sauce-storage:app_name, platformVersion=9.3, appiumVersion=1.5.3, platformName=iOS, deviceName=iPhone 6}], required capabilities = Capabilities [{}]
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 142.664 sec <<< FAILURE!
+testUIComputation(com.saucelabs.appium.SauceTest)  Time elapsed: 142.486 sec  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities [{app=sauce-storage:test_app.zip, platformVersion=9.3, appiumVersion=1.6.3, platformName=iOS, deviceName=iPhone 6}], required capabilities = Capabilities [{}]
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
 System info: host: 'ip-10-254-250-92.us-west-2.compute.internal', ip: 'fe80:0:0:0:1c91:ec1f:f345:fedf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_121'
 Driver info: driver.version: IOSDriver
@@ -57,7 +57,7 @@ Driver info: driver.version: IOSDriver
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testUIComputation(com.saucelabs.appium.SauceTest)  Time elapsed: 95.307 sec  <<< ERROR!
+testUIComputation(com.saucelabs.appium.SauceTest)  Time elapsed: 142.49 sec  <<< ERROR!
 java.lang.NullPointerException
 	at com.saucelabs.appium.SauceTest.tearDown(SauceTest.java:86)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)

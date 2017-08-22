@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="com.saucelabs.appium.SauceTest" time="190.613" errors="2" skipped="0">
+<testsuite tests="2" failures="0" name="com.saucelabs.appium.SauceTest" time="284.976" errors="2" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib"/>
@@ -61,11 +61,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.saucelabs.appium.SauceTest" name="testUIComputation" time="95.306">
-    <error message="Unable to create new remote session. desired capabilities = Capabilities [{app=sauce-storage:app_name, platformVersion=9.3, appiumVersion=1.5.3, platformName=iOS, deviceName=iPhone 6}], required capabilities = Capabilities [{}]
+  <testcase classname="com.saucelabs.appium.SauceTest" name="testUIComputation" time="142.486">
+    <error message="Unable to create new remote session. desired capabilities = Capabilities [{app=sauce-storage:test_app.zip, platformVersion=9.3, appiumVersion=1.6.3, platformName=iOS, deviceName=iPhone 6}], required capabilities = Capabilities [{}]
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
 System info: host: &apos;ip-10-254-250-92.us-west-2.compute.internal&apos;, ip: &apos;fe80:0:0:0:1c91:ec1f:f345:fedf%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: IOSDriver" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities [{app=sauce-storage:app_name, platformVersion=9.3, appiumVersion=1.5.3, platformName=iOS, deviceName=iPhone 6}], required capabilities = Capabilities [{}]
+Driver info: driver.version: IOSDriver" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities [{app=sauce-storage:test_app.zip, platformVersion=9.3, appiumVersion=1.6.3, platformName=iOS, deviceName=iPhone 6}], required capabilities = Capabilities [{}]
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
 System info: host: &apos;ip-10-254-250-92.us-west-2.compute.internal&apos;, ip: &apos;fe80:0:0:0:1c91:ec1f:f345:fedf%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_121&apos;
 Driver info: driver.version: IOSDriver
@@ -122,7 +122,7 @@ Driver info: driver.version: IOSDriver
     <system-out>johnsmith213
 </system-out>
   </testcase>
-  <testcase classname="com.saucelabs.appium.SauceTest" name="testUIComputation" time="95.307">
+  <testcase classname="com.saucelabs.appium.SauceTest" name="testUIComputation" time="142.49">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at com.saucelabs.appium.SauceTest.tearDown(SauceTest.java:86)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
