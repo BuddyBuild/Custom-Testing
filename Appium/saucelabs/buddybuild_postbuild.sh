@@ -11,7 +11,7 @@ echo $APP_PATH
 echo "=== Beginning upload of app to saucelabs ==="
 # saucelabs expects the app to be zipped
 zip -r $ZIPPED_APP $APP_PATH
-curl -u $SAUCE_USER:$SAUCE_ACCESS_KEY -X POST -H "Content-Type: application/octet-stream" https://saucelabs.com/rest/v1/storage/$SAUCE_USER/test_app.zip?overwrite=true --data-binary @$ZIPPED_APP
+curl -u $SAUCE_USERNAME:$SAUCE_ACCESS_KEY -X POST -H "Content-Type: application/octet-stream" https://saucelabs.com/rest/v1/storage/$SAUCE_USERNAME/test_app.zip?overwrite=true --data-binary @$ZIPPED_APP
 
 echo "=== Completed upload of app to saucelabs ==="
 brew install maven
