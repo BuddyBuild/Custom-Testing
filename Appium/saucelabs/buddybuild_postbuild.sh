@@ -6,7 +6,7 @@ mkdir /tmp/sandbox/workspace/buddybuild_artifacts
 mkdir /tmp/sandbox/workspace/buddybuild_artifacts/Appium
 
 # log some standard information
-APP_PATH="/tmp/sandbox/599b66cad741c700015bbcce/bbbuild/Build/Products/Debug-iphonesimulator/m2048.app"
+APP_PATH="/tmp/sandbox/$BUDDYBUILD_APP_ID/bbbuild/Build/Products/Debug-iphonesimulator/m2048.app"
 echo $APP_PATH
 echo "=== Beginning upload of app to saucelabs ==="
 # saucelabs expects the app to be zipped
