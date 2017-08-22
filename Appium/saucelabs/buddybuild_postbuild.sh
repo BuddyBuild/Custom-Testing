@@ -2,8 +2,7 @@
 ZIPPED_APP=/tmp/sandbox/workspace/zippedapp.zip
 
 # log some standard information
-echo $BUDDYBUILD_IPA_PATH
-echo APP_PATH="${BUDDYBUILD_IPA_PATH/.ipa/.app}"
+echo APP_PATH="/tmp/sandbox/599b66cad741c700015bbcce/bbbuild/Build/Products/Debug-iphonesimulator/m2048.app"
 echo $APP_PATH
 echo "=== Beginning upload of app to saucelabs ==="
 # saucelabs expects the app to be zipped
