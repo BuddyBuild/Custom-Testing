@@ -86,28 +86,11 @@ public class SauceTest implements SauceOnDemandSessionIdProvider {
         driver.quit();
     }
 
-    private void populate() {
-        //populate text fields with two random number
-        List<WebElement> elems = driver.findElementsByClassName("UIATextField");
-        Random random = new Random();
-        for (WebElement elem : elems) {
-            int rndNum = random.nextInt(MAXIMUM - MINIMUM + 1) + MINIMUM;
-            elem.sendKeys(String.valueOf(rndNum));
-            values.add(rndNum);
-        }
-    }
-
     @Test
     public void testUIComputation() throws Exception {
-
-        // populate text fields with values
-        populate();
-        // trigger computation by using the button
         WebElement button = driver.findElementByClassName("UIAButton");
-        button.click();
-        // is sum equal ?
-        WebElement texts = driver.findElementByClassName("UIAStaticText");
-        assertEquals(String.valueOf(values.get(0) + values.get(1)), texts.getText());
+        button.click(); // click a button on the screen
+
     }
 
     public String getSessionId() {
